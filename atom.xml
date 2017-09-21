@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.codingonway.com/"/>
-  <updated>2017-09-21T07:00:55.568Z</updated>
+  <updated>2017-09-21T09:53:31.675Z</updated>
   <id>http://www.codingonway.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面试题105 数值取整(四舍五入、向上取整、向下取整、向0取整)</title>
+    <link href="http://www.codingonway.com/python-convert-number-to-integer.html"/>
+    <id>http://www.codingonway.com/python-convert-number-to-integer.html</id>
+    <published>2017-09-21T09:30:20.000Z</published>
+    <updated>2017-09-21T09:53:31.675Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="数值取整"><a href="#数值取整" class="headerlink" title="数值取整"></a>数值取整</h2><blockquote><p>四舍五入：内置函数round()<br>向零取整：内置函数int()<br>向上取整：math模块中的math.ceil()<br>向下取整：math模块中的math.floor()</p></blockquote><a id="more"></a><h2 id="四舍五入"><a href="#四舍五入" class="headerlink" title="四舍五入"></a>四舍五入</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">3.2</span>)</div><div class="line"><span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">-3.8</span>)</div><div class="line"><span class="number">-4</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure><p>同时，round()函数向偶取整，即：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.5</span>)</div><div class="line"><span class="number">0</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">-0.5</span>)</div><div class="line"><span class="number">0</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1.5</span>)</div><div class="line"><span class="number">2</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p><p>注意，在Python2中round()函数返回浮点数，在Python3中返回整数。</p><h2 id="向0取整"><a href="#向0取整" class="headerlink" title="向0取整"></a>向0取整</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>int(<span class="number">3.2</span>)</div><div class="line"><span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>int(<span class="number">-3.8</span>)</div><div class="line"><span class="number">-3</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure><h2 id="向上取整"><a href="#向上取整" class="headerlink" title="向上取整"></a>向上取整</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> math</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>math.ceil(<span class="number">3.2</span>)</div><div class="line"><span class="number">4</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>math.ceil(<span class="number">-3.8</span>)</div><div class="line"><span class="number">-3</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure><h2 id="向下取整"><a href="#向下取整" class="headerlink" title="向下取整"></a>向下取整</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> math</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>math.floor(<span class="number">3.8</span>)</div><div class="line"><span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>math.floor(<span class="number">-3.2</span>)</div><div class="line"><span class="number">-4</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;数值取整&quot;&gt;&lt;a href=&quot;#数值取整&quot; class=&quot;headerlink&quot; title=&quot;数值取整&quot;&gt;&lt;/a&gt;数值取整&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;四舍五入：内置函数round()&lt;br&gt;向零取整：内置函数int()&lt;br&gt;向上取整：math模块中的math.ceil()&lt;br&gt;向下取整：math模块中的math.floor()&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="基础数据类型" scheme="http://www.codingonway.com/categories/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    
+    
+      <category term="数字" scheme="http://www.codingonway.com/tags/%E6%95%B0%E5%AD%97/"/>
+    
+  </entry>
   
   <entry>
     <title>面试题104 反转字符串、元组、列表等序列类型</title>

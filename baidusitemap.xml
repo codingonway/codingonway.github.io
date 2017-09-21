@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://www.codingonway.com/python-convert-number-to-integer.html</loc>
+    <lastmod>2017-09-21T09:53:31.675Z</lastmod>
+    <data>
+        <display>
+        <title>面试题105 数值取整(四舍五入、向上取整、向下取整、向0取整)</title>
+        <pubTime>2017-09-21T09:30:20.000Z</pubTime>
+        
+        <tag>数字</tag>
+         
+         
+           
+             
+              <breadCrumb title="基础数据类型" url="http://www.codingonway.com/categories/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.codingonway.com/reverse-sequence-type-str-tuple-list-in-python.html</loc>
     <lastmod>2017-09-21T07:00:55.568Z</lastmod>
     <data>

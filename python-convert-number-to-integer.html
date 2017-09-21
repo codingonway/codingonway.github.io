@@ -57,7 +57,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="列表," />
+  <meta name="keywords" content="数字," />
 
 
 
@@ -75,18 +75,18 @@
 
 
 
-<meta name="description" content="问题描述有二维列表如下：1matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]] 转置（行列互换）后的结果如下：1[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]">
-<meta name="keywords" content="列表">
+<meta name="description" content="数值取整 四舍五入：内置函数round()向零取整：内置函数int()向上取整：math模块中的math.ceil()向下取整：math模块中的math.floor()">
+<meta name="keywords" content="数字">
 <meta property="og:type" content="article">
-<meta property="og:title" content="面试题102 矩阵转置(二维列表行列互换)">
-<meta property="og:url" content="http://www.codingonway.com/matrix-transpose-in-python.html">
+<meta property="og:title" content="面试题105 数值取整(四舍五入、向上取整、向下取整、向0取整)">
+<meta property="og:url" content="http://www.codingonway.com/python-convert-number-to-integer.html">
 <meta property="og:site_name" content="Python笔试面试题">
-<meta property="og:description" content="问题描述有二维列表如下：1matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]] 转置（行列互换）后的结果如下：1[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]">
+<meta property="og:description" content="数值取整 四舍五入：内置函数round()向零取整：内置函数int()向上取整：math模块中的math.ceil()向下取整：math模块中的math.floor()">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-19T13:44:00.048Z">
+<meta property="og:updated_time" content="2017-09-21T09:53:31.675Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="面试题102 矩阵转置(二维列表行列互换)">
-<meta name="twitter:description" content="问题描述有二维列表如下：1matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]] 转置（行列互换）后的结果如下：1[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]">
+<meta name="twitter:title" content="面试题105 数值取整(四舍五入、向上取整、向下取整、向0取整)">
+<meta name="twitter:description" content="数值取整 四舍五入：内置函数round()向零取整：内置函数int()向上取整：math模块中的math.ceil()向下取整：math模块中的math.floor()">
 
 
 
@@ -116,13 +116,13 @@
 
 
 
-  <link rel="canonical" href="http://www.codingonway.com/matrix-transpose-in-python.html"/>
+  <link rel="canonical" href="http://www.codingonway.com/python-convert-number-to-integer.html"/>
 
 
 
 
 
-  <title>面试题102 矩阵转置(二维列表行列互换) | Python笔试面试题</title>
+  <title>面试题105 数值取整(四舍五入、向上取整、向下取整、向0取整) | Python笔试面试题</title>
   
 
 
@@ -287,7 +287,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.codingonway.com/matrix-transpose-in-python.html">
+    <link itemprop="mainEntityOfPage" href="http://www.codingonway.com/python-convert-number-to-integer.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大师兄">
@@ -304,7 +304,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">面试题102 矩阵转置(二维列表行列互换)</h1>
+          <h1 class="post-title" itemprop="name headline">面试题105 数值取整(四舍五入、向上取整、向下取整、向0取整)</h1>
         
 
         <div class="post-meta">
@@ -316,8 +316,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-19T18:54:16+08:00">
-                2017-09-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-21T17:30:20+08:00">
+                2017-09-21
               </time>
             
 
@@ -357,9 +357,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/matrix-transpose-in-python.html#comments" itemprop="discussionUrl">
+                <a href="/python-convert-number-to-integer.html#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="matrix-transpose-in-python.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="python-convert-number-to-integer.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -367,7 +367,7 @@
 
           
           
-             <span id="/matrix-transpose-in-python.html" class="leancloud_visitors" data-flag-title="面试题102 矩阵转置(二维列表行列互换)">
+             <span id="/python-convert-number-to-integer.html" class="leancloud_visitors" data-flag-title="面试题105 数值取整(四舍五入、向上取整、向下取整、向0取整)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -398,15 +398,16 @@
       
 
       
-        <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>有二维列表如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">matrix = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>], [<span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>]]</div></pre></td></tr></table></figure></p>
-<p>转置（行列互换）后的结果如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[[<span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>], [<span class="number">2</span>, <span class="number">6</span>, <span class="number">10</span>], [<span class="number">3</span>, <span class="number">7</span>, <span class="number">11</span>], [<span class="number">4</span>, <span class="number">8</span>, <span class="number">12</span>]]</div></pre></td></tr></table></figure></p>
+        <h2 id="数值取整"><a href="#数值取整" class="headerlink" title="数值取整"></a>数值取整</h2><blockquote>
+<p>四舍五入：内置函数round()<br>向零取整：内置函数int()<br>向上取整：math模块中的math.ceil()<br>向下取整：math模块中的math.floor()</p>
+</blockquote>
 <a id="more"></a>
-<h2 id="嵌套的列表推导式"><a href="#嵌套的列表推导式" class="headerlink" title="嵌套的列表推导式"></a>嵌套的列表推导式</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>], [<span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>]]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix_t = [[row[col] <span class="keyword">for</span> row <span class="keyword">in</span> matrix] <span class="keyword">for</span> col <span class="keyword">in</span> range(len(matrix[<span class="number">0</span>]))]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix_t</div><div class="line">[[<span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>], [<span class="number">2</span>, <span class="number">6</span>, <span class="number">10</span>], [<span class="number">3</span>, <span class="number">7</span>, <span class="number">11</span>], [<span class="number">4</span>, <span class="number">8</span>, <span class="number">12</span>]]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
-<p>原理很简单：先循环列，在固定列上循环每一行。</p>
-<h2 id="zip迭代-map映射"><a href="#zip迭代-map映射" class="headerlink" title="zip迭代 + map映射"></a>zip迭代 + map映射</h2><p>在 Python2 中：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>], [<span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>]]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix_t = map(list, zip(*matrix))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix_t</div><div class="line">[[<span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>], [<span class="number">2</span>, <span class="number">6</span>, <span class="number">10</span>], [<span class="number">3</span>, <span class="number">7</span>, <span class="number">11</span>], [<span class="number">4</span>, <span class="number">8</span>, <span class="number">12</span>]]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
-<p>如在 Python3 中，map函数返回的是迭代器不是列表，将结果用list函数构造成列表：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>], [<span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>]]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix_t = list(map(list, zip(*matrix)))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix_t</div><div class="line">[[<span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>], [<span class="number">2</span>, <span class="number">6</span>, <span class="number">10</span>], [<span class="number">3</span>, <span class="number">7</span>, <span class="number">11</span>], [<span class="number">4</span>, <span class="number">8</span>, <span class="number">12</span>]]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
-<p>原理也很清晰：先用zip并行迭代每一个列表，然后再用map将迭代后的元组转成列表。</p>
-
+<h2 id="四舍五入"><a href="#四舍五入" class="headerlink" title="四舍五入"></a>四舍五入</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">3.2</span>)</div><div class="line"><span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">-3.8</span>)</div><div class="line"><span class="number">-4</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
+<p>同时，round()函数向偶取整，即：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">0.5</span>)</div><div class="line"><span class="number">0</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">-0.5</span>)</div><div class="line"><span class="number">0</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1.5</span>)</div><div class="line"><span class="number">2</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>注意，在Python2中round()函数返回浮点数，在Python3中返回整数。</p>
+<h2 id="向0取整"><a href="#向0取整" class="headerlink" title="向0取整"></a>向0取整</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>int(<span class="number">3.2</span>)</div><div class="line"><span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>int(<span class="number">-3.8</span>)</div><div class="line"><span class="number">-3</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
+<h2 id="向上取整"><a href="#向上取整" class="headerlink" title="向上取整"></a>向上取整</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> math</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>math.ceil(<span class="number">3.2</span>)</div><div class="line"><span class="number">4</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>math.ceil(<span class="number">-3.8</span>)</div><div class="line"><span class="number">-3</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
+<h2 id="向下取整"><a href="#向下取整" class="headerlink" title="向下取整"></a>向下取整</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> math</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>math.floor(<span class="number">3.8</span>)</div><div class="line"><span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>math.floor(<span class="number">-3.2</span>)</div><div class="line"><span class="number">-4</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -460,7 +461,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/列表/" rel="tag"># 列表</a>
+            <a href="/tags/数字/" rel="tag"># 数字</a>
           
         </div>
       
@@ -483,8 +484,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/swap-dict-keys-and-values.html" rel="next" title="面试题101 交换字典的键和值">
-                <i class="fa fa-chevron-left"></i> 面试题101 交换字典的键和值
+              <a href="/reverse-sequence-type-str-tuple-list-in-python.html" rel="next" title="面试题104 反转字符串、元组、列表等序列类型">
+                <i class="fa fa-chevron-left"></i> 面试题104 反转字符串、元组、列表等序列类型
               </a>
             
           </div>
@@ -492,10 +493,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/python-get-fibonacci-n-number.html" rel="prev" title="面试题103 求斐波那契数列的第n项">
-                面试题103 求斐波那契数列的第n项 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -672,7 +669,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题描述"><span class="nav-number">1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#嵌套的列表推导式"><span class="nav-number">2.</span> <span class="nav-text">嵌套的列表推导式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip迭代-map映射"><span class="nav-number">3.</span> <span class="nav-text">zip迭代 + map映射</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数值取整"><span class="nav-number">1.</span> <span class="nav-text">数值取整</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四舍五入"><span class="nav-number">2.</span> <span class="nav-text">四舍五入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向0取整"><span class="nav-number">3.</span> <span class="nav-text">向0取整</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向上取整"><span class="nav-number">4.</span> <span class="nav-text">向上取整</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向下取整"><span class="nav-number">5.</span> <span class="nav-text">向下取整</span></a></li></ol></div>
             
 
           </div>
@@ -831,9 +828,9 @@ var jiathis_config={
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://www.codingonway.com/matrix-transpose-in-python.html';
-          this.page.identifier = 'matrix-transpose-in-python.html';
-          this.page.title = '面试题102 矩阵转置(二维列表行列互换)';
+          this.page.url = 'http://www.codingonway.com/python-convert-number-to-integer.html';
+          this.page.identifier = 'python-convert-number-to-integer.html';
+          this.page.title = '面试题105 数值取整(四舍五入、向上取整、向下取整、向0取整)';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://codingonway.disqus.com/embed.js';
