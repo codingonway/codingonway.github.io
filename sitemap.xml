@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.codingonway.com/python-min-stack.html</loc>
+    
+    <lastmod>2017-09-24T14:35:17.930Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.codingonway.com/python-implement-a-queue-using-two-stacks.html</loc>
     
     <lastmod>2017-09-24T13:44:36.918Z</lastmod>
