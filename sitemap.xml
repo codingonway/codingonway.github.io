@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.codingonway.com/python-implement-a-queue-using-two-stacks.html</loc>
+    
+    <lastmod>2017-09-24T13:44:36.918Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.codingonway.com/python-implement-data-stucture-stack-and-queue-base-on-list.html</loc>
     
     <lastmod>2017-09-23T03:12:30.502Z</lastmod>
