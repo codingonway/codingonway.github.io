@@ -83,7 +83,7 @@
 <meta property="og:site_name" content="Python笔试面试题">
 <meta property="og:description" content="问题描述输入一个链表的头结点，从尾到头反过来打印出每个节点的值。链表节点定义如下：1234class ListNode:    def __init__(self, x):        self.val = x        self.next = None">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-25T04:06:46.756Z">
+<meta property="og:updated_time" content="2017-09-25T04:08:09.638Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试题111 从尾到头打印链表">
 <meta name="twitter:description" content="问题描述输入一个链表的头结点，从尾到头反过来打印出每个节点的值。链表节点定义如下：1234class ListNode:    def __init__(self, x):        self.val = x        self.next = None">
@@ -402,7 +402,7 @@
 <a id="more"></a>
 <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>链表的遍历顺序是从头到尾，可输出打的顺序却是从尾到头。也就是说第一个遍历到的节点最后一个输出，而最后一个遍历到的节点第一个输出。这就是典型的”后进先出”，我们可以用栈来实现这种顺序。</p>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_list_from_tail_to_head</span><span class="params">(listNode)</span>:</span></div><div class="line">    stack = []</div><div class="line">    <span class="keyword">while</span> listNode:</div><div class="line">        stack.append(listNode.val)</div><div class="line">        listNode = listNode.next</div><div class="line">    <span class="keyword">return</span> stack[::<span class="number">-1</span>]</div></pre></td></tr></table></figure>
-<p>上述函数返回的是链表反序后的结果列表（如需打印自行写print语句）。<br>既然想到了用栈来实现这个函数，而递归在本质上就是一个栈结构，于是很自然地就想到用递归来实现。下面是递归版本的代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_list_from_tail_to_head</span><span class="params">(listNode)</span>:</span></div><div class="line">    <span class="keyword">if</span> listNode:</div><div class="line">        print_list_from_tail_to_head(listNode.next)</div><div class="line">        print(listNode.val)</div></pre></td></tr></table></figure></p>
+<p>上述函数返回的是链表反序后的值组成的结果列表（如需打印自行写print语句）。<br>既然想到了用栈来实现这个函数，而递归在本质上就是一个栈结构，于是很自然地就想到用递归来实现。下面是递归版本的代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_list_from_tail_to_head</span><span class="params">(listNode)</span>:</span></div><div class="line">    <span class="keyword">if</span> listNode:</div><div class="line">        print_list_from_tail_to_head(listNode.next)</div><div class="line">        print(listNode.val)</div></pre></td></tr></table></figure></p>
 <p>上面的基于递归的代码看起来很简洁，但有一个问题，当链表非常长的时候，就会导致函数调用的层级很深，从而有可能导致栈溢出。显然用基于循环实现的代码的鲁棒性要好一些。</p>
 
       
@@ -490,6 +490,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/python-find-kth-node-from-end.html" rel="prev" title="面试题112 链表中倒数第k个节点">
+                面试题112 链表中倒数第k个节点 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -602,7 +606,7 @@ var jiathis_config={
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
