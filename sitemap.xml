@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.codingonway.com/python-reverse-list.html</loc>
+    
+    <lastmod>2017-09-25T07:29:51.167Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.codingonway.com/python-find-kth-node-from-end.html</loc>
     
     <lastmod>2017-09-25T06:48:51.075Z</lastmod>
