@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.codingonway.com/python-construct-binary-tree.html</loc>
+    
+    <lastmod>2017-09-26T07:16:28.066Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.codingonway.com/python-delete-dupicate-node.html</loc>
     
     <lastmod>2017-09-25T16:15:54.899Z</lastmod>
