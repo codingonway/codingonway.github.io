@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.codingonway.com/python-balanced-binary-tree.html</loc>
+    
+    <lastmod>2017-09-27T03:03:12.131Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.codingonway.com/python-tree-depth.html</loc>
     
     <lastmod>2017-09-27T02:20:10.702Z</lastmod>
