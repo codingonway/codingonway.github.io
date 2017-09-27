@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.codingonway.com/"/>
-  <updated>2017-09-26T09:38:44.332Z</updated>
+  <updated>2017-09-27T02:20:10.702Z</updated>
   <id>http://www.codingonway.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面试题122 二叉树的深度</title>
+    <link href="http://www.codingonway.com/python-tree-depth.html"/>
+    <id>http://www.codingonway.com/python-tree-depth.html</id>
+    <published>2017-09-27T02:15:24.000Z</published>
+    <updated>2017-09-27T02:20:10.702Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>输入一颗二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。二叉树节点的定义如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">TreeNode</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, x)</span>:</span></div><div class="line">        self.val = x</div><div class="line">        self.left = <span class="keyword">None</span></div><div class="line">        self.right = <span class="keyword">None</span></div></pre></td></tr></table></figure></p><a id="more"></a><h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>树的深度其实就是左、右子树深度的较大值再加1。</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">tree_depth</span><span class="params">(pRoot)</span>:</span></div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> pRoot:</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span></div><div class="line">    <span class="keyword">return</span> max(tree_depth(pRoot.left),tree_depth(pRoot.right)) + <span class="number">1</span></div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;输入一颗二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。二叉树节点的定义如下：&lt;br&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TreeNode&lt;/span&gt;:&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(self, x)&lt;/span&gt;:&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        self.val = x&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        self.left = &lt;span class=&quot;keyword&quot;&gt;None&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        self.right = &lt;span class=&quot;keyword&quot;&gt;None&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="数据结构和算法" scheme="http://www.codingonway.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="二叉树" scheme="http://www.codingonway.com/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+  </entry>
   
   <entry>
     <title>面试题121 从上往下打印二叉树</title>
@@ -440,29 +462,6 @@
     
     
       <category term="递归和循环" scheme="http://www.codingonway.com/tags/%E9%80%92%E5%BD%92%E5%92%8C%E5%BE%AA%E7%8E%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>面试题102 矩阵转置(二维列表行列互换)</title>
-    <link href="http://www.codingonway.com/matrix-transpose-in-python.html"/>
-    <id>http://www.codingonway.com/matrix-transpose-in-python.html</id>
-    <published>2017-09-19T10:54:16.000Z</published>
-    <updated>2017-09-19T13:44:00.048Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>有二维列表如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">matrix = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>], [<span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>]]</div></pre></td></tr></table></figure></p><p>转置（行列互换）后的结果如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[[<span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>], [<span class="number">2</span>, <span class="number">6</span>, <span class="number">10</span>], [<span class="number">3</span>, <span class="number">7</span>, <span class="number">11</span>], [<span class="number">4</span>, <span class="number">8</span>, <span class="number">12</span>]]</div></pre></td></tr></table></figure></p><a id="more"></a><h2 id="嵌套的列表推导式"><a href="#嵌套的列表推导式" class="headerlink" title="嵌套的列表推导式"></a>嵌套的列表推导式</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>], [<span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>]]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix_t = [[row[col] <span class="keyword">for</span> row <span class="keyword">in</span> matrix] <span class="keyword">for</span> col <span class="keyword">in</span> range(len(matrix[<span class="number">0</span>]))]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix_t</div><div class="line">[[<span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>], [<span class="number">2</span>, <span class="number">6</span>, <span class="number">10</span>], [<span class="number">3</span>, <span class="number">7</span>, <span class="number">11</span>], [<span class="number">4</span>, <span class="number">8</span>, <span class="number">12</span>]]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure><p>原理很简单：先循环列，在固定列上循环每一行。</p><h2 id="zip迭代-map映射"><a href="#zip迭代-map映射" class="headerlink" title="zip迭代 + map映射"></a>zip迭代 + map映射</h2><p>在 Python2 中：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>], [<span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>]]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix_t = map(list, zip(*matrix))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix_t</div><div class="line">[[<span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>], [<span class="number">2</span>, <span class="number">6</span>, <span class="number">10</span>], [<span class="number">3</span>, <span class="number">7</span>, <span class="number">11</span>], [<span class="number">4</span>, <span class="number">8</span>, <span class="number">12</span>]]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p><p>如在 Python3 中，map函数返回的是迭代器不是列表，将结果用list函数构造成列表：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>], [<span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>]]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix_t = list(map(list, zip(*matrix)))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>matrix_t</div><div class="line">[[<span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>], [<span class="number">2</span>, <span class="number">6</span>, <span class="number">10</span>], [<span class="number">3</span>, <span class="number">7</span>, <span class="number">11</span>], [<span class="number">4</span>, <span class="number">8</span>, <span class="number">12</span>]]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p><p>原理也很清晰：先用zip并行迭代每一个列表，然后再用map将迭代后的元组转成列表。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;有二维列表如下：&lt;br&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;matrix = [[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;], [&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;], [&lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;12&lt;/span&gt;]]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;转置（行列互换）后的结果如下：&lt;br&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;[[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;], [&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;], [&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;], [&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;12&lt;/span&gt;]]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="基础数据类型" scheme="http://www.codingonway.com/categories/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    
-    
-      <category term="列表" scheme="http://www.codingonway.com/tags/%E5%88%97%E8%A1%A8/"/>
     
   </entry>
   

@@ -57,7 +57,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="链表," />
+  <meta name="keywords" content="二叉树," />
 
 
 
@@ -75,18 +75,18 @@
 
 
 
-<meta name="description" content="问题描述输入一个链表的头结点，从尾到头反过来打印出每个节点的值。链表节点定义如下：1234class ListNode:    def __init__(self, x):        self.val = x        self.next = None">
-<meta name="keywords" content="链表">
+<meta name="description" content="问题描述输入一颗二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。二叉树节点的定义如下：12345class TreeNode:    def __init__(self, x):        self.val = x        self.left = None        self.right = None">
+<meta name="keywords" content="二叉树">
 <meta property="og:type" content="article">
-<meta property="og:title" content="面试题111 从尾到头打印链表">
-<meta property="og:url" content="http://www.codingonway.com/python-print-list-from-tail-to-head.html">
+<meta property="og:title" content="面试题122 二叉树的深度">
+<meta property="og:url" content="http://www.codingonway.com/python-tree-depth.html">
 <meta property="og:site_name" content="Python笔试面试题">
-<meta property="og:description" content="问题描述输入一个链表的头结点，从尾到头反过来打印出每个节点的值。链表节点定义如下：1234class ListNode:    def __init__(self, x):        self.val = x        self.next = None">
+<meta property="og:description" content="问题描述输入一颗二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。二叉树节点的定义如下：12345class TreeNode:    def __init__(self, x):        self.val = x        self.left = None        self.right = None">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-25T04:08:09.638Z">
+<meta property="og:updated_time" content="2017-09-27T02:20:10.702Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="面试题111 从尾到头打印链表">
-<meta name="twitter:description" content="问题描述输入一个链表的头结点，从尾到头反过来打印出每个节点的值。链表节点定义如下：1234class ListNode:    def __init__(self, x):        self.val = x        self.next = None">
+<meta name="twitter:title" content="面试题122 二叉树的深度">
+<meta name="twitter:description" content="问题描述输入一颗二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。二叉树节点的定义如下：12345class TreeNode:    def __init__(self, x):        self.val = x        self.left = None        self.right = None">
 
 
 
@@ -116,13 +116,13 @@
 
 
 
-  <link rel="canonical" href="http://www.codingonway.com/python-print-list-from-tail-to-head.html"/>
+  <link rel="canonical" href="http://www.codingonway.com/python-tree-depth.html"/>
 
 
 
 
 
-  <title>面试题111 从尾到头打印链表 | Python笔试面试题</title>
+  <title>面试题122 二叉树的深度 | Python笔试面试题</title>
   
 
 
@@ -287,7 +287,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.codingonway.com/python-print-list-from-tail-to-head.html">
+    <link itemprop="mainEntityOfPage" href="http://www.codingonway.com/python-tree-depth.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大师兄">
@@ -304,7 +304,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">面试题111 从尾到头打印链表</h1>
+          <h1 class="post-title" itemprop="name headline">面试题122 二叉树的深度</h1>
         
 
         <div class="post-meta">
@@ -316,8 +316,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-25T11:27:54+08:00">
-                2017-09-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-27T10:15:24+08:00">
+                2017-09-27
               </time>
             
 
@@ -357,9 +357,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/python-print-list-from-tail-to-head.html#comments" itemprop="discussionUrl">
+                <a href="/python-tree-depth.html#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="python-print-list-from-tail-to-head.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="python-tree-depth.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -367,7 +367,7 @@
 
           
           
-             <span id="/python-print-list-from-tail-to-head.html" class="leancloud_visitors" data-flag-title="面试题111 从尾到头打印链表">
+             <span id="/python-tree-depth.html" class="leancloud_visitors" data-flag-title="面试题122 二叉树的深度">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -398,13 +398,10 @@
       
 
       
-        <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>输入一个链表的头结点，从尾到头反过来打印出每个节点的值。链表节点定义如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ListNode</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, x)</span>:</span></div><div class="line">        self.val = x</div><div class="line">        self.next = <span class="keyword">None</span></div></pre></td></tr></table></figure></p>
+        <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>输入一颗二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。二叉树节点的定义如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">TreeNode</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, x)</span>:</span></div><div class="line">        self.val = x</div><div class="line">        self.left = <span class="keyword">None</span></div><div class="line">        self.right = <span class="keyword">None</span></div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>链表的遍历顺序是从头到尾，可输出打的顺序却是从尾到头。也就是说第一个遍历到的节点最后一个输出，而最后一个遍历到的节点第一个输出。这就是典型的”后进先出”，我们可以用栈来实现这种顺序。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_list_from_tail_to_head</span><span class="params">(listNode)</span>:</span></div><div class="line">    stack = []</div><div class="line">    <span class="keyword">while</span> listNode:</div><div class="line">        stack.append(listNode.val)</div><div class="line">        listNode = listNode.next</div><div class="line">    <span class="keyword">return</span> stack[::<span class="number">-1</span>]</div></pre></td></tr></table></figure>
-<p>上述函数返回的是链表反序后的值组成的结果列表（如需打印自行写print语句）。<br>既然想到了用栈来实现这个函数，而递归在本质上就是一个栈结构，于是很自然地就想到用递归来实现。下面是递归版本的代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_list_from_tail_to_head</span><span class="params">(listNode)</span>:</span></div><div class="line">    <span class="keyword">if</span> listNode:</div><div class="line">        print_list_from_tail_to_head(listNode.next)</div><div class="line">        print(listNode.val)</div></pre></td></tr></table></figure></p>
-<p>上面的基于递归的代码看起来很简洁，但有一个问题，当链表非常长的时候，就会导致函数调用的层级很深，从而有可能导致栈溢出。显然用基于循环实现的代码的鲁棒性要好一些。</p>
-
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>树的深度其实就是左、右子树深度的较大值再加1。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">tree_depth</span><span class="params">(pRoot)</span>:</span></div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> pRoot:</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span></div><div class="line">    <span class="keyword">return</span> max(tree_depth(pRoot.left),tree_depth(pRoot.right)) + <span class="number">1</span></div></pre></td></tr></table></figure>
       
     </div>
     
@@ -458,7 +455,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/链表/" rel="tag"># 链表</a>
+            <a href="/tags/二叉树/" rel="tag"># 二叉树</a>
           
         </div>
       
@@ -481,8 +478,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/python-stack-push-pop-order.html" rel="next" title="面试题110 栈的压入、弹出序列">
-                <i class="fa fa-chevron-left"></i> 面试题110 栈的压入、弹出序列
+              <a href="/python-print-tree-from-top-to-bottom.html" rel="next" title="面试题121 从上往下打印二叉树">
+                <i class="fa fa-chevron-left"></i> 面试题121 从上往下打印二叉树
               </a>
             
           </div>
@@ -490,10 +487,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/python-find-kth-node-from-end.html" rel="prev" title="面试题112 链表中倒数第k个节点">
-                面试题112 链表中倒数第k个节点 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -829,9 +822,9 @@ var jiathis_config={
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://www.codingonway.com/python-print-list-from-tail-to-head.html';
-          this.page.identifier = 'python-print-list-from-tail-to-head.html';
-          this.page.title = '面试题111 从尾到头打印链表';
+          this.page.url = 'http://www.codingonway.com/python-tree-depth.html';
+          this.page.identifier = 'python-tree-depth.html';
+          this.page.title = '面试题122 二叉树的深度';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://codingonway.disqus.com/embed.js';
