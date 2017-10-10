@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://www.codingonway.com/python-reverse-iterator-over-sequence.html</loc>
+    <lastmod>2017-10-10T02:32:52.323Z</lastmod>
+    <data>
+        <display>
+        <title>面试题127 反序迭代一个序列(字符串、元组、列表等)</title>
+        <pubTime>2017-10-10T02:30:40.000Z</pubTime>
+        
+        <tag>序列</tag>
+         
+         
+           
+             
+              <breadCrumb title="基础数据类型" url="http://www.codingonway.com/categories/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.codingonway.com/python-remove-list-duplicate-items.html</loc>
     <lastmod>2017-10-07T15:41:38.416Z</lastmod>
     <data>
