@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://www.codingonway.com/python-sorted-dict-list-by-common-keys.html</loc>
+    <lastmod>2017-10-19T03:48:06.601Z</lastmod>
+    <data>
+        <display>
+        <title>面试题128 通过公共键对字典列表进行排序</title>
+        <pubTime>2017-10-19T03:16:38.000Z</pubTime>
+        
+        <tag>字典</tag>
+         
+         
+           
+             
+              <breadCrumb title="基础数据类型" url="http://www.codingonway.com/categories/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.codingonway.com/python-reverse-iterator-over-sequence.html</loc>
     <lastmod>2017-10-10T02:32:52.323Z</lastmod>
     <data>
